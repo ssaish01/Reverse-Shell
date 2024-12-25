@@ -17,38 +17,31 @@ This repository contains two communication systems using Python's `socket` and `
 
 ### 1. **Single-Client Communication**
 
-1. Navigate to the `single_client` directory:
-    ```bash
-    cd single_client
-    ```
-
-2. Edit the `client.py` file to set the correct server IP address:
+1. Edit the `client.py` file to set the correct server IP address:
     ```python
     host = '192.168.1.6'  # Replace with the server's IP address
     port = 9999
     ```
 
-3. Ensure that the specified port (`9999` by default) is open and not blocked by firewalls.
+2. Modify the port number to your convenience. Ensure that the port is open and not blocked by firewalls.
 
 ---
 
 ## Running the Single-Client Program
 
 ### Step 1: Start the Server
-1. Navigate to the `single_client` directory.
-2. Run the server script:
+1. Run the server script:
    ```bash
-   python single_client_Server.py
+   python single_client_server.py
    ```
-3. The server will bind to the specified port (`9999`) and wait for a client connection.
+2. The server will bind to the specified port and wait for a client connection.
 
 ### Step 2: Start the Client
-1. Navigate to the `single_client` directory.
-2. Run the client script:
+1. Run the client script:
    ```bash
    python client.py
    ```
-3. The client will connect to the server, and you can begin sending commands.
+2. The client will connect to the server, and you can begin sending commands.
 
 ---
 
@@ -56,39 +49,32 @@ This repository contains two communication systems using Python's `socket` and `
 
 ### 1. **Multi-Client Communication**
 
-1. Navigate to the `multi_client` directory:
-    ```bash
-    cd multi_client
-    ```
-
-2. Edit the `client_1.py` and `client_2.py` files to set the correct server IP address:
+1. Edit the `client_1.py` and `client_2.py` files to set the correct server IP address:
     ```python
     host = '192.168.1.6'  # Replace with the server's IP address
     port = 9999
     ```
 
-3. Ensure that the specified port (`9999` by default) is open and not blocked by firewalls.
+2. Modify the port number to your convenience. Ensure that the port is open and not blocked by firewalls.
 
 ---
 
 ## Running the Multi-Client Program
 
 ### Step 1: Start the Server
-1. Navigate to the `multi_client` directory.
-2. Run the server script:
+1. Run the server script:
    ```bash
    python multi_client_server.py
    ```
-3. The server will bind to the specified port (`9999`) and start accepting multiple client connections.
+2. The server will bind to the specified port (`9999`) and start accepting multiple client connections.
 
 ### Step 2: Start the Clients
-1. Navigate to the `multi_client` directory.
-2. Run the client scripts:
+1. Run the client scripts:
    ```bash
    python client_1.py
    python client_2.py
    ```
-3. Each client will connect to the server. You can use the server to interact with any connected client.
+2. Each client will connect to the server. You can use the server to interact with any connected client.
 
 ---
 
