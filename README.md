@@ -1,4 +1,4 @@
-```markdown
+
 # Multi-Client & Single-Client Communication System
 
 This repository contains two communication systems using Python's `socket` and `threading` libraries:
@@ -110,6 +110,7 @@ This repository contains two communication systems using Python's `socket` and `
 ---
 
 ## Example Interaction
+You can find the output screenshots in the 'Screenshots' folder.
 
 ### Single-Client Interaction
 #### Server:
@@ -118,7 +119,16 @@ Binding the port 9999
 Connection has been established
 Ip: 192.168.1.7
 Port: 53698
-> dir  # Example command
+ls   # Example command
+Volume in drive C has no label.
+Volume Serial Number is ABCD-EFGH
+
+Directory of C:\Users\Username
+
+12/25/2024  10:30 AM    <DIR>          .
+12/25/2024  10:30 AM    <DIR>          ..
+12/25/2024  10:30 AM    <DIR>          Documents
+C:\Users\Username> 
 ```
 
 #### Client:
@@ -144,6 +154,15 @@ reverse_shell> list
 reverse_shell> select 0
 You are now connected to: 192.168.1.10:52010
 (192.168.1.10:52010)> dir
+ Volume in drive C has no label.
+ Volume Serial Number is ABCD-EFGH
+
+ Directory of C:\Users\Username
+
+12/25/2024  10:30 AM    <DIR>          .
+12/25/2024  10:30 AM    <DIR>          ..
+12/25/2024  10:30 AM    <DIR>          Documents
+(192.168.1.10:52010) C:\Users\Username>
 ```
 
 #### Client:
@@ -175,11 +194,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Contribution
 
 Feel free to open issues or submit pull requests to improve this project.
-```
-
-### Key Updates in the README:
-- **Project Structure**: The project structure is clearly laid out, showing the separation of the single-client and multi-client communication code.
-- **Setup Instructions**: Detailed instructions for both single-client and multi-client systems to ensure that users can easily get the project running.
-- **Example Interaction**: Provided interaction examples for both single-client and multi-client setups.
-
-This should give users all the information they need to work with both systems in the same repository. Let me know if you need any further changes!
